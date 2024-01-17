@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="options-wrapper">
+      <label class="select-label" for="level"
+        >Select your level
+        <select name="" id="level">
+          <option value="200">Easy</option>
+          <option value="150">Middle</option>
+          <option value="100">Hard</option>
+          <option value="50">Superhard</option>
+        </select>
+      </label>
+      <div class="buttons-wrapper">
+        <p>Game borders</p>
+        <div class="radio-wrapper">
+          <div class="label-wrapper">
+            <label for="yes">Yes</label>
+            <input
+              id="yes"
+              type="radio"
+              name="borders"
+              value="yes"
+              checked
+              class="radio-yes checked"
+            />
+          </div>
+          <div class="label-wrapper">
+            <label for="no"> No </label>
+            <input
+              id="no"
+              type="radio"
+              name="borders"
+              value="no"
+              class="radio-no"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game-container">
+      <div class="snake snake-segment" id="snake"></div>
+      <div class="food"></div>
+      <div class="super-food"></div>
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

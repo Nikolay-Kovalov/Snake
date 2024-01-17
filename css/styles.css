@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+    min-width: 100vh;
+    background-image: url("../images/6230287.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-container {
+    margin-right: calc(100vw/6);
+    height: 100vh;
+    width: 680px;
+    background-color: rgb(116, 193, 251);
+    position: relative;
+    opacity: 0.7;
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid white; */
+
+    background-color: darkgreen;
+    position: absolute;
+    z-index: 999;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/pngwing.com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999;
+}
+
+.super-food {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/pngwing.com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999;
+}
+
+.select-label {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#level {
+    width: 200px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 8px;
+    margin-top: 4px;
+    border: none;
+}
+
+.options-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.buttons-wrapper p {
+    font-size: 20px;
+}
+
+.radio-wrapper {
+    display: flex;
+    gap: 24px;
+
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    position: relative;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+input[type="radio"].checked::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 999;
+}
+
+input[type="radio"]::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 3px solid white;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 999;
+    transition: background-color 0.4s ease;
+}
+
+.label-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
